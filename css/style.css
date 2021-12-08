@@ -506,7 +506,7 @@ input[type=submit]:hover {
 
 }
 
-
+/* 760 화면 이상에서만 나타나는 애니메이션 */ 
 @media screen and (min-width: 760px){
   #contacts{
     animation-duration: 1s;
@@ -519,7 +519,7 @@ input[type=submit]:hover {
     }
     
     
-  .workanimation{
+  #workanimation{
     animation-duration: 1s;
     animation-name: bounce;
   }
@@ -531,7 +531,7 @@ any animation you created in your site. */
     #contacts{
       animation-name: dissolve;
     }
-    .workanimation{
+    #workanimation{
       animation-name: dissolve;
     }
 
@@ -542,7 +542,7 @@ any animation you created in your site. */
     .flip-card-inner
     {
       transform: none;
-      
+      transition: none;
     }
 
   }
