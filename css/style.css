@@ -529,12 +529,7 @@ input[type=submit]:hover {
     animation-name: bounce;
   }
 }
-/*? Make sure to write a media query to turn it off as well.
-@media only screen and (max-device-width: 760px) {
-  .parallax {
-    background-attachment: scroll;
-  } 
-} */
+
 
 
 
