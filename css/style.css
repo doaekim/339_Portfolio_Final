@@ -437,6 +437,7 @@ input[type=submit]:hover {
 
 .flip-card-inner {
   position:relative;
+
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -456,7 +457,6 @@ input[type=submit]:hover {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  
   background-color: azure;
   color: black;
 }
@@ -476,12 +476,6 @@ input[type=submit]:hover {
   transform: rotateY(180deg);
 }
 
-/*? Make sure to write a media query to turn it off as well.
-@media only screen and (max-device-width: 760px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}*/
 
 
 
@@ -513,19 +507,20 @@ input[type=submit]:hover {
     animation-name: slidein; 
      
   }
-    
-.parallax {
-      background-attachment: scroll;
-    }
-    
-    
+
   #workanimation{
     animation-duration: 1s;
     animation-name: bounce;
   }
+}
+/*? Make sure to write a media query to turn it off as well.
+@media only screen and (max-device-width: 760px) {
+  .parallax {
+    background-attachment: scroll;
+  } 
+} */
 
-/*?You must include a media-query that turns off 
-any animation you created in your site. */
+
 
   @media screen and (prefers-reduced-motion) {
     #contacts{
@@ -534,15 +529,20 @@ any animation you created in your site. */
     #workanimation{
       animation-name: dissolve;
     }
+  
 
+    .parallax {
+      background-attachment: scroll;
+    }
 
-
-    .flip-card-front .flip-card:hover 
-    .flip-card-inner 
-    .flip-card-inner
-    {
-      transform: none;
+    .flip-card:hover .flip-card-inner,
+    .flip-card:focus-within .flip-card-inner,
+    .flip-card:active .flip-card-inner,
+    .flip-card:focus .flip-card-inner,
+    .flip-card-back{ 
       transition: none;
+      transform: none;
+     
     }
 
   }
@@ -663,9 +663,10 @@ h3{
 }
 .projects .item .title{
   font-size: 30px;
-  font-weight: bold;
+  
   
 }
+
 
 .contact-text{
   text-align: center;
@@ -738,7 +739,7 @@ embed{
 
 
 
-}
+
 
 @media screen and (min-width: 930px){
 
