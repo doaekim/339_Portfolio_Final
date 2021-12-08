@@ -40,14 +40,6 @@ h3{
 
 }
 
-h4{color: rgb(75, 126, 117);
-  font-size: 20px;
-  padding: 5px;
-  margin: 5px;
-  text-align: center;
-  line-height: 25px;
-}
-
 
 
 header{
@@ -93,16 +85,14 @@ embed{
 
 nav ul{
   list-style-type: none;
-  padding: 0; /**/
+  padding: 0; 
   
 }
 
 nav li{
   /*display: inline;*/
   padding-right: 0px;
-  margin-bottom: 5px;
-  /*border: 1px solid #545e69;*/
-  
+  margin-bottom: 5px; 
 }
 
 nav{
@@ -200,13 +190,12 @@ img{
   width: 100%;
 }
 
-.about-image{
-  
+#about-image{
   display: grid;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  width: 500px;
+ width: 50%;
+  height: 100%;
   border: blanchedalmond;
   border-style:solid;
   
@@ -313,23 +302,22 @@ input[type=submit]:hover {
 /* Projects Section */
 .projects .item {
   margin-bottom: 30px;
-}
+  color: rgb(75, 126, 117);
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  line-height: 25px;
 
+}
 .projects .item .title {
+  color: #778492;
   font-size: 20px;
   margin-top: 0;
+  text-decoration: underline;
   margin-bottom: 5px;
   line-height: 1.5;
 }
-
-.projects .item .title a {
-  color: #778492;
-}
-
-.projects .item .title a:hover {
-  color: #5f6b77;
-}
-
 
 
 /* Skills Section */
@@ -413,13 +401,70 @@ input[type=submit]:hover {
   margin: 2rem auto; 
 }
 
+/* education section*/
+.education .item {
+  margin-bottom: 30px;
+  color: rgb(75, 126, 117);
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  line-height: 25px;
 
-#contacts{
-  animation-name:none;
 }
 
-#workanimation{
-  animation-name: none;
+/* flip card */
+
+.flip-card {
+  background-color: transparent;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #f1f1f1;
+}
+
+.flip-card-inner {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/*?*/
+/* Position the front and back side  */
+.flip-card-front, .flip-card-back {
+  
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #008CCC;
+  background-color: azure;
+  color: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  
+  background-color: blanchedalmond;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
 
@@ -454,6 +499,30 @@ input[type=submit]:hover {
     animation-duration: 1s;
     animation-name: bounce;
   }
+    
+    
+  @media screen and (prefers-reduced-motion) {
+    #contacts{
+      animation-name: dissolve;
+    }
+    #workanimation{
+      animation-name: dissolve;
+    }
+
+
+/*?*/
+    .flip-card-front .flip-card:hover 
+    .flip-card-inner 
+    .flip-card-inner
+    {
+      -webkit-transform: 0 !important;
+      -o-transform: 0 !important;
+      transform: 0 !important;
+      
+    }
+
+  }
+
 
   nav{
     padding: 20px;
@@ -600,12 +669,6 @@ h3{
 
 }
 
-h4{
-  font-size: 22px;
-  padding: 0px 20px 50px 20px;
-  margin: 10px;
-  line-height: 30px;
-}
 
 embed{
   height: 400px;
@@ -620,7 +683,21 @@ embed{
   
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("/");
 
+  background-image: url("../images/themetpara.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }
 
 @media screen and (min-width: 930px){
