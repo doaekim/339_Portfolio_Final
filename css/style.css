@@ -306,8 +306,9 @@ input[type=submit]:hover {
 }
 
 .projects .item .title {
+  font-size: 25px;
   color: #778492;
-  font-size: 20px;
+  font-style: italic;
   margin-top: 0;
   text-decoration: underline;
   margin-bottom: 5px;
@@ -768,11 +769,7 @@ embed{
     
   }
 
-  .projects .item .title{
-    font-size: 40px;
-    font-weight: bold;
-    
-  }
+ 
 
   .resume-vincent{
     font-size: 35px;
