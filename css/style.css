@@ -514,7 +514,7 @@ input[type=submit]:hover {
      
   }
 
-  #workanimation{
+  .workanimation{
     animation-duration: 1s;
     animation-name: bounce;
   }
