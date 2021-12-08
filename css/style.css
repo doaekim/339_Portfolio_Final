@@ -421,8 +421,8 @@ input[type=submit]:hover {
   display: grid;
   margin-left: auto;
   margin-right: auto;
- width: 50%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   border: blanchedalmond;
   border-style:solid;
   
@@ -432,15 +432,11 @@ input[type=submit]:hover {
 
 .flip-card {
   background-color: transparent;
-  width: 50%;
-  height: 100%;
   border: 1px solid #f1f1f1;
 }
 
 .flip-card-inner {
   position:relative;
-  width: 100%;
-  height: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
