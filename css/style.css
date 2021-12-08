@@ -470,7 +470,7 @@ input[type=submit]:hover {
 .flip-card-back {
   
   background-color: blanchedalmond;
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 
