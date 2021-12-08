@@ -460,9 +460,8 @@ input[type=submit]:hover {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #008CCC;
+  
   background-color: azure;
-  color: white;
   color: black;
 }
 
@@ -470,7 +469,6 @@ input[type=submit]:hover {
 .flip-card-back {
   
   background-color: blanchedalmond;
-
   transform: rotateY(180deg);
 }
 
