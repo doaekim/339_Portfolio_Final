@@ -476,6 +476,22 @@ input[type=submit]:hover {
   transform: rotateY(180deg);
 }
 
+.parallax {
+  /* The image used */
+  
+  color: #fff;
+  background-image: url("../images/themetpara.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 
 
@@ -719,25 +735,6 @@ embed{
   align-items: center;
   
 }
-
-.parallax {
-  /* The image used */
-  
-  color: #fff;
-  background-image: url("../images/themetpara.jpg");
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-
 
 
 
