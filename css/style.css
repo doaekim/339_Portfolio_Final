@@ -476,12 +476,12 @@ input[type=submit]:hover {
   transform: rotateY(180deg);
 }
 
-/*? Make sure to write a media query to turn it off as well.*/
+/*? Make sure to write a media query to turn it off as well.
 @media only screen and (max-device-width: 760px) {
   .parallax {
     background-attachment: scroll;
   }
-}
+}*/
 
 
 
@@ -513,7 +513,12 @@ input[type=submit]:hover {
     animation-name: slidein; 
      
   }
-
+    
+.parallax {
+      background-attachment: scroll;
+    }
+    
+    
   .workanimation{
     animation-duration: 1s;
     animation-name: bounce;
