@@ -536,9 +536,7 @@ any animation you created in your site. */
     .flip-card-inner 
     .flip-card-inner
     {
-      -webkit-transform: 0 !important;
-      -o-transform: 0 !important;
-      transform: 0 !important;
+      transform: none;
       
     }
 
