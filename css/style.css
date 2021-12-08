@@ -508,7 +508,7 @@ input[type=submit]:hover {
      
   }
 
-  #workanimation{
+  .workanimation{
     animation-duration: 1s;
     animation-name: bounce;
   }
@@ -526,7 +526,7 @@ input[type=submit]:hover {
     #contacts{
       animation-name: dissolve;
     }
-    #workanimation{
+    .workanimation{
       animation-name: dissolve;
     }
   
